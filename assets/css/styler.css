@@ -1,0 +1,155 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: 218px repeat(4, 1fr);
+    grid-template-rows: 56px  repeat(3, 1fr);
+    font-family: "Roboto", sans-serif;
+}
+
+.logo-youtube {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 20px;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+
+.search input {
+    width: 348px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.icon-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 57px;
+    height: 40px;
+    background-color: #F8F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-left: 0;
+}
+
+.icon-search:hover {
+    background-color: #d3ccccf8;
+}
+
+.icons-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    width: 130px;
+    height: 34px;
+    padding: 10px;
+    place-self: end;
+}
+
+.icons-options img {
+    width: 24px;
+    height: 24px;
+}
+
+
+#photo-profile {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+nav {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icons-nav {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    margin: 24px;
+}
+
+.icons-nav img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9F9;
+    padding: 32px;
+    gap: 10px;
+}
+
+.card img {
+    width: 250px;
+    height: 140px;
+}
+
+.infor-video {
+    display: flex;
+    width: 249px;
+}
+
+.logo-dio img {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+.title-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.title p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.view p {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.icon-search,
+.logo-youtube,
+#photo-profile,
+.icons-options img,
+.card img,
+.logo-dio,
+.title {
+    cursor: pointer;
+}
